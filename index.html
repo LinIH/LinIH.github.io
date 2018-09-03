@@ -5,71 +5,96 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" href="https://linih.github.io/style.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<!--jquery-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<!--boostrap 4-->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<!--jquery UI>
+		<link href = "https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel = "stylesheet">
+		<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script-->
+		
+
+
+
+		
 	</head>
 	<body>
+		<!--header-->
+		<div id="header">
+			<div class="avatar">
+				<img src="assets/src/img/photo.jpg">
+			</div>
+			<div id="name">林怡慧<br>I-Hui Lin</div>
 
-		<div class="container">
-			<!-- background image-->
-			<img src="https://linih.github.io/watercolor texture background 0706.jpg" id="bg">
-			<!--header-->
-			<header>
-				<span class="header-text">Hello!<br><small>This is my first responsive website design practice!</small></span>
-			</header>
-
-			<section>
-				<span class="section">
-					<span class="section-content">
-						<h1>學歷</h1>
-						國立中央大學 資訊工程學系(2018畢業)<br>
-						修習過物聯網、自然語言處理、資料科學處理、Web技術與實作等課程，並自學HTML、CSS與Javascript的Web開發公開課程。
-					</span>
-					<span class="section-content">
-						<h1>語言</h1>
-						英文 TOEIC 720分
-						中央大學103年英文電影模仿競賽 佳作
-					</span>
-					<span class="section-content">
-						<h1>經歷</h1>
-						<strong>中央大學第六屆電競大賽副執行長</strong><br>
-						提供全校學生交流、切磋的機會，並希望促進電子競技成為大眾認同的活動。主要負責規劃活動日程、與各大相關廠商接觸以獲得贊助以及協助執行長。<br><br>
-						<strong>Windows App 開發兩日上手營</strong><br>
-						學習如何利用Visual Studio開發Windows App，並且成功發佈到Windows Store。</dd><br>
-					</span>
-					<span class="section-content">
-						<h1>程式語言</h1>
-						<strong>Python－資料科學課程期末專題：分析PTT Movie版</strong><br>
-						python爬蟲獲取PTT論壇中Movie版的資料，比對IMDb上的票房、評價，並對實際案例進行分析。<br><br>
-						<strong>C－畢業專題：利用CUDA將程式作平行化運算</strong><br>
-						學習使用CUDA改寫程式，達到加速運算的效果，在最終利用CUDA將程式改寫為平行化的運算方式。<br><br>
-						<strong>Java－互動式桌布小遊戲、小型連線聊天室</strong><br>
-						使用Java製作互動式桌布的小遊戲，使用各種功能與桌面互動，會在桌布上呈現效果。以及有簡易UI、並且可以多人連線使用的聊天室。<br><br>
-						<strong>其他</strong><br>
-						C++、html、css、javascript
-					</span>
-				</span>
-			</section>
-
-			<aside>
-				<span class="photo"><img src="photo.jpg"></span>
-				<span class="data-list">
-					<ul>
-						<li><i class="fa fa-venus" aria-hidden="true"></i>林怡慧 Lin I-Hui</li>
-						<li><i class="fa fa-birthday-cake" aria-hidden="true"></i>1996-05-03</li>
-						<li><i class="fa fa-mobile" aria-hidden="true"></i>0972798567</li>
-						<li><i class="fa fa-envelope" aria-hidden="true"></i>nightsky257@gmail.com</li>
-						<li><a href="https://github.com/LinIH"><i class="fab fa-github" aria-hidden="true"></i>LinIH</a></li>
-					</ul>
-				</span>
-			</aside>
-
+			<div id="contact" class="clickable" data-toggle="modal" data-target="#contact-dialog">
+				<i class="fas fa-info-circle"></i>連絡方式
+			</div>
+			<div id="contact-dialog" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title"><i class="fas fa-info-circle"></i>連絡方式</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;0972798567<br>
+							<i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;nightsky257@gmail.com<br>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
+		<!--body-->
+		<div id="body">
+			<div class="content-block">
+				<h1>About me</h1>
+				<ul>
+					<li>國立中央大學 資訊工程學系 2018畢業</li>
+				</ul>
+				<div class="continue">施工中...</div>
+			</div>
+			<div class="content-block">
+				<h1>Skill</h1>
+				<ul>
+					<li>html/css</li>
+					<li>javascript/jquery/ajax</li>
+				</ul>
+				<div class="continue">施工中...</div>
+			</div>
+			<div class="content-block">
+				<h1>Works</h1>
+				<ul>
+					<li><a href="#" class="clickable" data-toggle="modal" data-target="#work01-dialog">work01</a></li>
+				</ul>
+				<div id="work01-dialog" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">work01</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								Here is content to introduce this work.
+								<div class="clickable" href="#">點我觀看作品</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="continue">施工中...</div>
+			</div>
+		</div>
 
 	</body>
 </html>
