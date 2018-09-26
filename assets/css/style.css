@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Spirax");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300");
+html, body {
+  top: 0;
+}
+
+body, header, #body, footer {
+  font-family: "Montserrat", sans-serif;
+}
+
+body, section, footer {
+  color: #FFF;
+  background: #000;
+}
+
+.wrapper {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding-top: 20px;
+  display: block;
+  background-color: #232a34;
+}
+header #logo {
+  font-size: 32px;
+  font-family: "Spirax", cursive;
+  color: #FFF;
+}
+
+section {
+  text-align: center;
+}
+section .page {
+  height: 700px;
+  padding-top: 100px;
+  font-family: "Montserrat", sans-serif;
+}
+section .page .card-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+section .page .card-wrapper .card {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 400px;
+  font-size: 14px;
+  margin: 0 20px 0 20px;
+  padding: 50px 20px 50px 20px;
+}
+section .page .card-wrapper .card a {
+  margin-bottom: 5px;
+  color: #d8f0f3;
+  text-decoration: none;
+}
+section .page .card-wrapper .card div {
+  margin-bottom: 5px;
+}
+section .page .slogan {
+  margin-bottom: 50px;
+}
+section .page i {
+  margin: 10px;
+  border: 2px solid #FFF;
+  border-radius: 100%;
+  padding: 10px;
+  background-color: #232a34;
+}
+section .page .icon {
+  font-size: 24px;
+  color: #FFF;
+}
+section .page1 {
+  background-color: #103c3d;
+}
+section .page2 {
+  background-color: #232a34;
+}
+
+footer {
+  background-color: #232a34;
+  font-size: 14px;
+  height: 30px;
+}
+footer div {
+  width: 100%;
+  line-height: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+table {
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  text-align: left;
+  border-top: 2px solid #FFFFFF;
+}
+table tr .col_1 {
+  width: 23%;
+}
+table tr .col_2 {
+  width: 27%;
+}
+table tr .col_3 {
+  width: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
