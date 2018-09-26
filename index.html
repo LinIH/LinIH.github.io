@@ -5,96 +5,161 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" href="../assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/grid.css" />
 
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<!--icon-font-awesome-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 		<!--jquery-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 		<!--boostrap 4-->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-		<!--jquery UI>
-		<link href = "https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel = "stylesheet">
-		<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
-		<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script-->
 		
-
-
-
 		
 	</head>
 	<body>
 		<!--header-->
-		<div id="header">
-			<div class="avatar">
-				<img src="../images/photo.jpg">
-			</div>
-			<div id="name">林怡慧<br>I-Hui Lin</div>
+		<header class="sticky-top">
+			<nav class="navbar navbar-dark navbar-expand-lg wrapper">
+				<a class="nav-brand" href="index.html" id="logo">I-Hui, Lin</a>
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggleContent" aria-controls="navbarToggleContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarToggleContent">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#page-education">Education</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#page-skill">Skill</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#page-contact">Contact</a>
+						</li>
+					</ul>
 
-			<div id="contact" class="clickable" data-toggle="modal" data-target="#contact-dialog">
-				<i class="fas fa-info-circle"></i>連絡方式
-			</div>
-			<div id="contact-dialog" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-				<div class="modal-dialog modal-dialog-centered" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title"><i class="fas fa-info-circle"></i>連絡方式</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="modal-body">
-							<i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;0972798567<br>
-							<i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;nightsky257@gmail.com<br>
-						</div>
+				</div>
+			</nav>
+		</header>
+
+		<!--body-->
+		<section>
+			<div class="page page1" id="page-education">
+				<h1 class="slogan">Education</h1>
+				<div class="card-wrapper">
+					<div class="card grid_6">
+						<h5 style="color: #9999e6">Bachelor of Science</h5>
+						<div>&nbsp;</div>
+						<a href="https://www.ncu.edu.tw/" target="_blank">National Central University (Taiwan)</a>
+						<div>September 2014 ~ June 2018</div>
+						<div style="color: #d8f0f3;">Computer Science and Information Engineering</div>
+						<div>Average Score (0-100): 77.56</div>
+					</div>
+					<div class="card grid_6">
+						<h5 style="color: #9999e6">High School</h5>
+						<div>&nbsp;</div>
+						<a href="http://www.ccgsh.tn.edu.tw/tw.asp" target="_blank">National Tainan Chia-Chi Girls' Senior High School (Taiwan)</a>
+						<div>September 2011 ~ June 2014</div>
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<!--body-->
-		<div id="body">
-			<div class="content-block">
-				<h1>About me</h1>
-				<ul>
-					<li>國立中央大學 資訊工程學系 2018畢業</li>
-				</ul>
-				<div class="continue">施工中...</div>
-			</div>
-			<div class="content-block">
-				<h1>Skill</h1>
-				<ul>
-					<li>html/css</li>
-					<li>javascript/jquery/ajax</li>
-				</ul>
-				<div class="continue">施工中...</div>
-			</div>
-			<div class="content-block">
-				<h1>Works</h1>
-				<ul>
-					<li><a href="#" class="clickable" data-toggle="modal" data-target="#ow-tv-dialog">Overwatch TV</a></li>
-				</ul>
-				<div id="ow-tv-dialog" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Overwatch TV</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body">
-								Here is content to introduce this work.
-								<a class="clickable" href="https://linih.github.io/Overwatch-TV/">點我觀看作品</a>
-							</div>
-						</div>
+			<div class="page page2" id="page-skill">
+				<h1 class="slogan">Skill</h1>
+				<div class="card-wrapper">
+					<div class="card grid_7">
+						<h5>Computer Skill</h5>
+						<table>
+							<tr>
+								<td class="col_1">&nbsp;</td>
+								<td class="col_2">&nbsp;</td>
+								<td class="col_3">&nbsp;</td>
+							</tr>
+							<tr>
+								<th class="col_1">Development Environment</th>
+								<th class="col_2">Year of Experience</th>
+								<th class="col_3">Description</th>
+							</tr>
+							<tr>
+								<td class="col_1">Windows</td>
+								<td class="col_2">4</td>
+								<td class="col_3">The most one I use</td>
+							</tr>
+							<tr>
+								<td class="col_1">Linux</td>
+								<td class="col_2">1</td>
+								<td class="col_3">Sometimes use in the class</td>
+							</tr>
+							<tr>
+								<td class="col_1">&nbsp;</td>
+								<td class="col_2">&nbsp;</td>
+								<td class="col_3">&nbsp;</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td class="col_1">&nbsp;</td>
+								<td class="col_2">&nbsp;</td>
+								<td class="col_3">&nbsp;</td>
+							</tr>
+							<tr>									
+								<th class="col_1">Programming Language</th>
+								<th class="col_2">Year of Experience</th>
+								<th class="col_3">Description</th>
+							</tr>
+							<tr>
+								<td class="col_1">Java SE</td>
+								<td class="col_2">4</td>
+								<td class="col_3">Familiar; most used to write program</td>
+							</tr>								
+							<tr>
+								<td class="col_1">C++/C</td>
+								<td class="col_2">4</td>
+								<td class="col_3">Familiar</td>
+							</tr>
+							<tr>
+								<td class="col_1">Python</td>
+								<td class="col_2">2</td>
+								<td class="col_3">Used for data science</td>
+							</tr>
+							<tr>
+								<td class="col_1">HTML and CSS</td>
+								<td class="col_2">1</td>
+								<td class="col_3">Used to create website</td>
+							</tr>
+						</table>
 					</div>
-				</div>	
-				<div class="continue">施工中...</div>
+					<div class="card grid_5">
+						<h5>Language Ability</h5>
+						<table>
+							<tr>
+								<td style="width: 10%;">&nbsp;</td>
+								<td style="text-align: right; width: 15%;">&nbsp;</td>
+							</tr>
+							<tr>
+								<td style="width: 10%;">Madarin Chinese</td>
+								<td style="text-align: right; width: 15%;">Native language</td>
+							</tr>
+							<tr>
+								<td style="width: 10%;">English</td>
+								<td style="text-align: right; width: 15%">TOEIC 720</td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</div>
-		</div>
-
+			<div class="page page1" id="page-contact">
+				<h1 class="slogan">Contact Information</h1>
+				<div style="margin: 200px auto 40px auto; font-family: 'Rubik', sans-serif";>Email: ihuilin1996@gmail.com</div>
+				<a href="assets/resume.pdf" target="_blank"><i class="fa fa-download icon"></i></a>
+				<a href="mailto:ihuilin1996@gmail.com"><i class="fa fa-envelope icon"></i></a>
+				<a href="https://github.com/LinIH" target="_blank"><i class="fab fa-github icon"></i></a>
+			</div>
+		</section>
+		<footer>
+			<div>Copyright &copy; 2018 by I-Hui, Lin</div>
+		</footer>
 	</body>
 </html>
