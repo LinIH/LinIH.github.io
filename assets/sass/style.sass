@@ -1,107 +1,130 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat')
+@import url('https://fonts.googleapis.com/css?family=Spirax')
+@import url('https://fonts.googleapis.com/css?family=Rubik:300')
 
 $white: #FFF
 $black: #000
 $light-gray: #eee
 $dark-gray: #666
 $link-color: #4d4dff
+$dark-blue: #232a34
+$dark-green: #103c3d
 
 $break-small: 480px
 $break-medium: 768px
 
 $montserrat: 'Montserrat', sans-serif
 
-body, #header, #body
+html, body
+	top: 0
+
+body, header, #body, footer
 	font-family: $montserrat
 
-body
+body, section, footer
 	color: $white
 	background: $black
 
-#header
-	width: 100%
+.wrapper
+	width: 60%
+	margin-left: auto
+	margin-right: auto
+
+header
+	height: 80px
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	z-index: 999
+	padding-top: 20px
 	display: block
+	background-color: $dark-blue
+
+	#logo
+		font-size: 32px
+		font-family: 'Spirax', cursive
+		color: $white
+
+section
 	text-align: center
-	padding: 100px 0 0 0
-	margin: auto
-	margin-bottom: 80px
-	.avatar
-		display: inline-block
-		border: 1px solid #aaa
-		border-radius: 100%
-		margin: 0 0 30px 0
-		padding: 5px
-		background-color: rgba(255, 255, 255, 0.075)
-		img
-			width: 200px
+
+	.page
+		height: 700px
+		padding-top: 100px
+		font-family: $montserrat
+
+		.card-wrapper
+			display: flex
+			flex-direction: row
+			justify-content: center
+
+			.card
+				display: inline-block
+				background-color: rgba(0, 0 , 0, 0.1)
+				height: 400px
+				font-size: 14px
+				margin: 0 20px 0 20px
+				padding: 50px 20px 50px 20px
+
+				a
+					margin-bottom: 5px
+					color: #d8f0f3
+					text-decoration: none
+
+				div
+					margin-bottom: 5px
+
+		.slogan
+			margin-bottom: 50px
+
+		i
+			margin: 10px
+			border: 2px solid $white
 			border-radius: 100%
-			display: block
-	#name
-		font-size: 18px
+			padding: 10px
+			background-color: $dark-blue
 
-	#contact
-		display: inline-block
-	.modal-body
-		font-size: 20px
+		.icon
+			font-size: 24px
+			color: $white
 
 
-#body
-	text-align: center
-	height: 600px
-	display: flex
-	flex-direction: row
-	justify-content: center
-	.content-block
-		background-color: $light-gray
+	.page1
+		background-color: $dark-green
 
-		width: 400px
-		height: 600px
-		display: inline-block
-		margin: 0px 10px 20px 10px
+	.page2
+		background-color: $dark-blue
 
-		box-shadow: 5px 5px 5px gray
+footer
+	background-color: $dark-blue
+	font-size: 14px
+	height: 30px
 
-		h1
-			padding-top: 20px
+	div
+		width: 100%
+		line-height: 30px
+		margin-right: auto
+		margin-left: auto
+		text-align: center
 
-		ul
-			list-style: none
-			margin-top: 50px
-			text-align: left
+table
+	font-family: 'Rubik', sans-serif
+	width: 100%
+	text-align: left
+	border-top: 2px solid #FFFFFF
 
-		li
-			font-size: 20px
+	tr
+		.col_1
+			width: 23%
 
-.continue
-	color: $dark-gray
+		.col_2
+			width: 27%
 
-.clickable
-	color: $link-color
-	&:hover
-		cursor: pointer
+		.col_3
+			width: 50%
 
 
 @media screen and (max-width: 768px)
-	#body
-		width: 100%
-		display: flex
-		flex-direction: column
-
-		.content-block
-			width: 95%
-			box-shadow: 3px 3px 5px $dark-gray
-
-			h1
-				font-size: 22px
-			li
-				font-size: 16px
 
 @media screen and (min-width: 769px) and (max-width: 1024px)
-	#body
-		width: 100%
-		display: flex
-		flex-direction: column
-		.content-block
-			width: 95%
-			li
-				font-size: 22px
