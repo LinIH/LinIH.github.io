@@ -1,0 +1,16 @@
+----------------------------------------------------------------------------------------------------------
+
+Disk    TotalSectors       Cylinders    Heads    Sectors/Track     DIskInfo
+0        1953525168      121601         255                 63             ST1000DM003-1SB102  
+----------------------------------------------------------------------------------------------------------
+
+-----------------------------begin collect basic volume-----------------------------------
+DriverLetter   FileSystem  StartSector     TotalSectors     ParentDisk: Disk      VolumeLabel
+
+-----------------------------end collect basic volume-----------------------------------
+
+-----------------------------begin collect dynamic volume-----------------------------------
+DriverLetter   FileSystem   DynamicVolumeType   TotalSectors       VolumeLabel      ParentDiskInfo
+
+-----------------------------end collect dynamic volume-------------------------------------
+
